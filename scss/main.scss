@@ -1,0 +1,32 @@
+$bgColor: pink;
+$x100 :100px;
+$x150:150px;
+$x900:900px;
+
+@mixin boxMixin($color,$width,$height){
+    background-color: $color;
+    width: $width;
+    height: $height;
+}
+.container {
+    @include boxMixin($bgColor,$x900 ,$x150 )
+}
+.box1 {
+    @include boxMixin(blue,$x100 ,$x100 )
+}
+.box2 {
+    @include boxMixin(green,$x900 ,$x100 )
+}
+.box3 {
+    @extend .box1;
+   
+}
+.box4 {
+    @include boxMixin(red,$x100 ,$x150 )
+}
+.box5 {
+    @include boxMixin(purple,$x900 ,$x100 )
+}
+.box6 {
+    @include boxMixin(orange,$x150 ,$x100 )
+}
