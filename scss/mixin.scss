@@ -1,0 +1,26 @@
+@mixin boyut($g,$y) {
+    width: $g;
+    height: $y;
+}
+@mixin renk($bc:null, $c:null){
+    background-color: $bc;
+    color: $c;
+}
+
+@mixin ucnokta {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.urunListe {
+    float: left;
+    border: 2px solid green;
+    @include boyut(500px,250px );
+    @include renk(pink,rgb(165, 71, 71) );
+    @include ucnokta();
+}
+.detay {
+    float: left;
+    @include boyut(50% ,300px )
+}

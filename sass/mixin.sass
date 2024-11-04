@@ -1,0 +1,18 @@
+@mixin boyut($genislik:null,$yukseklik:null) //varsayılan bir deger gondermezsem null kabul edilsin
+    width: $genislik
+    height: $yukseklik
+
+@mixin renk($arka,$renk1)
+    background-color: $arka
+    color: $renk1
+
+@mixin ucnokta
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+.kutu
+    float: left
+    @include boyut(300px,100px)
+    @include renk(#ae7e7e,#8e4e4e )
+    @include ucnokta
