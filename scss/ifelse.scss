@@ -1,0 +1,22 @@
+@mixin stil($takim){
+    @if($takim =="ss"){
+        background-color: red;
+        color: #fff;
+    } @else if($takim== "bs"){
+        background-color: seagreen;
+        color: #fff;
+    } @else if($takim =="as"){
+        background-color: orange;
+        color: #fff;
+    }@else {
+        background-color: black;
+        color: #fff;
+    }
+}
+
+.kutu{
+    font-size: 25px;
+    float: left;
+    padding: 10px 15px;
+    @include stil("bs")
+}
