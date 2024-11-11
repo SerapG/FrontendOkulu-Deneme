@@ -1,0 +1,13 @@
+// $boyutlar: 1,2,3,4,5,6
+
+// @each $boyut in $boyutlar
+//     .b-#{$boyut}
+//         font-size: 10+$boyut +px
+
+$degerler: (1: 100,2: 150, 3: 200, 4: 250) //bu yapiya map ismi verilir
+
+@each $isim,$buyukluk in $degerler
+    .kutu-#{$isim}
+        float: left
+        width: $buyukluk +px
+        background: seagreen
