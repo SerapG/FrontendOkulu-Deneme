@@ -1,0 +1,22 @@
+@function gridSistemi($birim, $toplam){
+    @return (100 *$birim) / $toplam
+}
+
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    .sol {
+        float: left;
+        width: gridSistemi(3,10 );
+        background-color: seagreen;
+    }
+    .sag{
+        float: left;
+        width: gridSistemi(7,10 );
+        background-color: orange;
+    }
+
+
+}
+

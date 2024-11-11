@@ -1,0 +1,14 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container .sol {
+  float: left;
+  width: 30;
+  background-color: seagreen;
+}
+.container .sag {
+  float: left;
+  width: 70;
+  background-color: orange;
+}/*# sourceMappingURL=fonksiyon.css.map */
