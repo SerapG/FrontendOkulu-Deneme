@@ -1,0 +1,25 @@
+.mesaj {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.hatali{
+    @extend .mesaj;
+    background-color: red;
+}
+
+.basarili {
+    @extend .mesaj;
+    background-color: seagreen;
+}
+.uyari{
+    @extend .mesaj;
+    background-color: orange;
+
+}
